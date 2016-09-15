@@ -2,19 +2,19 @@ body {
 	text-align: center;
 	font-family: courier;
 	background-size: cover;
-	color: grey;
+	color: #6b6b47;
 }
 
 h1.one{
 	margin: 100px 75px;
-	font-size: 75px;
+	font-size: 100px;
 }
 
 h1.two {
-	margin: 50px 200px 25px 200px;
+	margin: 50px 300px 25px 300px;
 	padding: 10px;
-	font-size: 60px;
+	font-size: 75px;
 	border: solid;
 	border-width: 2px;
-
+	background: rgba(0, 0, 0, 0.4);
 }
