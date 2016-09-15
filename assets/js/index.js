@@ -5,18 +5,22 @@ var background = function() {
 
   if (time < 12) {
     document.getElementById("h1").innerText = "Good Morining Sunshine!";
+    document.body.style.backgroundImage = "url('assets/images/one.jpg')";
   };
 
-  if (time == 12) {
+  if (time = 12) {
     document.getElementById("h1").innerText = "Lunch Time!";
+    document.body.style.backgroundImage = "url('assets/images/two.jpg')";
   };
 
-  if (time > 12) {
+  if (time < 17) {
     document.getElementById("h1").innerText = "Good Afternoon!";
+    document.body.style.backgroundImage = "url('assets/images/three.jpg')";
   };
 
-  if (time >= 16) {
+  if (time >= 17) {
     document.getElementById("h1").innerText = "Good Evening!";
+    document.body.style.backgroundImage = "url('assets/images/four.jpg')";
   };
 };
 
@@ -35,7 +39,6 @@ var startclock = function() {
 };
 
 startclock();
-
 
 function checkTime(i) {
   if (i < 10) {
