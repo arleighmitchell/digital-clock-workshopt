@@ -24,24 +24,27 @@ background();
 
 var startclock = function() {
   var today = new Date();
-  var hours = today.getHours();
-  var minutes = today.getMinutes();
-  var seconds = today.getSeconds();
-  m = checkTime(minutes);
-  s = checkTime(seconds);
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  min = checkTime(m);
+  sec = checkTime(s);
   var time = setTimeout(startclock, 1000);
 
-  document.getElementById("txt").innerText = hours + ":" + minutes + ":" + seconds;
+  document.getElementById("txt").innerText = h + ":" + min + ":" + sec;
 };
+
+startclock();
+
 
 function checkTime(i) {
   if (i < 10) {
     i = "0" + i;
     return i;
-  };
+  } else {
+    return i;
+  }
 };
 
-startclock();
-
-checkTime(m);
-checkTime(s);
+checkTime(min);
+checkTime(sec);

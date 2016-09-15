@@ -1,0 +1,18 @@
+body {
+	text-align: center;
+	font-family: courier;
+}
+
+h1.one{
+	margin: 25px;
+	font-size: 50px;
+}
+
+h1.two {
+	margin: 25px 125px 25px 125px;
+	padding: 10px;
+	font-size: 50px;
+	border: solid;
+	border-width: 2px;
+
+}
